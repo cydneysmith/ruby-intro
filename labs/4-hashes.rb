@@ -30,3 +30,16 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+
+#grab your usd value
+usd_value = bitcoin_data["bpi"]["USD"]["rate"]
+usd_value_float = bitcoin_data["bpi"]["USD"]["rate_float"]
+
+#create your response
+bitcoin_response = "1 Bitcoin is valued at $#{usd_value} USD."
+your_worth = "Your Bitcoin is worth $#{bitcoin * usd_value_float}."
+
+#print your response
+puts "You have #{bitcoin} bitcoin."
+puts bitcoin_response
+puts your_worth

@@ -16,6 +16,18 @@ suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 # 2 of Spades
 # 3 of Clubs
 # ...
+for suit in suits
+    for rank in ranks
+        puts "#{rank} of #{suit}"
+    end
+end
+
+#do ranks first (can start with suits first too)
+# for rank in ranks #each one of ranks is a rank.
+#     puts rank
+# end
+
+
 
 # CHALLENGE
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
