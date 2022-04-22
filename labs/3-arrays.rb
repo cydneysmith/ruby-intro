@@ -15,3 +15,25 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+#create lists
+my_list = ["milk", "eggs", "bacon", "beer"]
+friend_list = ["beer", "cookies", "apples"]
+
+#combine lists together
+joint_list = my_list + friend_list
+#puts joint_list
+
+#sort alphabetically
+sorted_list = joint_list.sort
+#puts sorted_list
+
+#now, remove duplicates
+unique_sorted_list = sorted_list.uniq
+puts unique_sorted_list
+
+
+#one liner way... dont do it this way
+# puts (my_list + friend_list).sort.uniq
+
+#lastly, prepend buy.... coming back to that
